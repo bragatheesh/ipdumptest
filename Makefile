@@ -5,4 +5,4 @@ all:
 	gcc hellodump.c -o hellodump
 	gcc -pthread mthread.c -o mthread
 clean:
-	$(RM) hellocmsg hellodump 3mthread
+	$(RM) hellocmsg hellodump mthread
