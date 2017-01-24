@@ -150,8 +150,7 @@ main(void)
     for (cmsgptr = CMSG_FIRSTHDR(&msg);
 	 cmsgptr != NULL;
 	 cmsgptr = CMSG_NXTHDR(&msg, cmsgptr)) {
-      
-      printf("in the for loop\n");
+
       if (cmsgptr->cmsg_level == IPPROTO_IP &&
 	  cmsgptr->cmsg_type == DSTADDR_SOCKOPT) {
 
