@@ -204,9 +204,9 @@ void *client_handler(void *arg)
 	*/
 	msg.msg_controllen = cmsg->cmsg_len;
 	
-	hexDump("from client", &msg, sizeof(msg));
+	//hexDump("from client", &msg, sizeof(msg));
 	sendmsg(socket_desc, &msg, 0);
-	hexDump("after send", &msg, sizeof(msg));
+	//hexDump("after send", &msg, sizeof(msg));
 
 	sleep(3);
 	close(socket_desc);

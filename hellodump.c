@@ -145,7 +145,7 @@ main(void)
     printf("%ld bytes ", (long)nbytes);
     printf("from %s:%hu ", inet_ntoa(cliaddr.sin_addr), ntohs(cliaddr.sin_port));
     
-    hexDump("pls",&msg,sizeof(msg));
+    hexDump("dump:",&msg,sizeof(msg));
 
     for (cmsgptr = CMSG_FIRSTHDR(&msg);
 	 cmsgptr != NULL;
